@@ -1,0 +1,944 @@
+
+/* ===== Dark Green Gradient Theme ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #eaffea;
+    background:
+        radial-gradient(ellipse at top left, #123d29 0%, transparent 45%),
+        radial-gradient(ellipse at bottom right, #064e3b 0%, transparent 40%),
+        linear-gradient(135deg, #020b07, #071f13, #03150d);
+    background-attachment: fixed;
+}
+
+/* ===== Title ===== */
+
+.title {
+    color: #a7f3b2;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 60px 20px 25px;
+
+    background: linear-gradient(
+        90deg,
+        #4ade80,
+        #bbf7d0,
+        #10b981,
+        #4ade80
+    );
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: greenFlow 6s linear infinite;
+    filter: drop-shadow(0 0 18px #22c55e55);
+}
+
+/* ===== About Section ===== */
+
+.about {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 35px;
+
+    background: linear-gradient(
+        135deg,
+        #0b2c1cdd,
+        #10452ddd,
+        #062317ee
+    );
+
+    border: 1px solid #4ade8050;
+    border-radius: 24px;
+
+    color: #d1fae5;
+    font-size: 1.1rem;
+    line-height: 1.9;
+
+    box-shadow:
+        0 10px 40px #00000055,
+        inset 0 1px 0 #86efac20;
+
+    backdrop-filter: blur(12px);
+    transition: transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.about:hover {
+    transform: translateY(-6px);
+    border-color: #4ade80;
+    box-shadow:
+        0 15px 45px #22c55e22,
+        0 0 20px #16a34a15;
+}
+
+/* ===== Contact Section ===== */
+
+.contact {
+    max-width: 850px;
+    margin: 30px auto 60px;
+    padding: 35px;
+
+    background: linear-gradient(
+        120deg,
+        #064e3b,
+        #14532d,
+        #052e16
+    );
+
+    border: 1px solid #34d39970;
+    border-radius: 24px;
+
+    color: #ecfdf5;
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    box-shadow: 0 0 35px #10b98115;
+
+    transition: all 0.35s ease;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px #10b98135;
+    border-color: #6ee7b7;
+}
+
+/* ===== Links inside sections ===== */
+
+.about a,
+.contact a {
+    color: #86efac;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about a:hover,
+.contact a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px #4ade80;
+}
+
+/* ===== Smooth Green Animation ===== */
+
+@keyframes greenFlow {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 300% center;
+    }
+}
+
+/* ===== Mobile Responsive ===== */
+
+@media (max-width: 600px) {
+    .title {
+        padding-top: 40px;
+        letter-spacing: 1px;
+    }
+
+    .about,
+    .contact {
+        margin: 20px 15px;
+        padding: 24px;
+        border-radius: 18px;
+    }
+}
+
+
+/* ===== Games Section: Neon Green Vibe ===== */
+
+.games {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 30px;
+
+    background:
+        radial-gradient(ellipse at top left, #14532d88, transparent 55%),
+        linear-gradient(135deg, #020b07, #092719, #03150d);
+
+    border: 1px solid #22c55e55;
+    border-radius: 28px;
+
+    color: #ecfdf5;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    box-shadow:
+        0 0 35px #16a34a15,
+        inset 0 0 35px #22c55e08;
+
+    overflow: hidden;
+}
+
+/* Games heading */
+
+.games h1,
+.games h2 {
+    color: #86efac;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-shadow: 0 0 18px #22c55e55;
+}
+
+/* Game cards */
+
+.games .game {
+    position: relative;
+    padding: 24px;
+    margin: 16px 0;
+
+    background: linear-gradient(
+        135deg,
+        #103923,
+        #082819,
+        #064e3b
+    );
+
+    border: 1px solid #22c55e40;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px #00000035;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+    overflow: hidden;
+}
+
+/* Neon hover effect */
+
+.games .game:hover {
+    transform: translateY(-7px) scale(1.015);
+
+    border-color: #4ade80;
+
+    box-shadow:
+        0 12px 35px #22c55e25,
+        0 0 20px #10b98120;
+}
+
+/* Game titles */
+
+.games .game h3 {
+    color: #bbf7d0;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+/* Game descriptions */
+
+.games .game p {
+    color: #c3e8cf;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* Game images */
+
+.games .game img {
+    display: block;
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+
+    border: 1px solid #34d39935;
+
+    transition: transform 0.4s ease,
+                filter 0.4s ease;
+}
+
+.games .game:hover img {
+    transform: scale(1.02);
+    filter: brightness(1.12);
+}
+
+/* Play buttons */
+
+.games .game a,
+.games .game button {
+    display: inline-block;
+    padding: 12px 24px;
+
+    color: #02150a;
+    background: linear-gradient(
+        135deg,
+        #86efac,
+        #22c55e,
+        #10b981
+    );
+
+    border: none;
+    border-radius: 12px;
+
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow: 0 0 18px #22c55e30;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+.games .game a:hover,
+.games .game button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+    box-shadow: 0 0 28px #22c55e70;
+}
+
+/* Game grid (optional) */
+
+.games .game-list {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 250px), 1fr)
+    );
+    gap: 22px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+    .games {
+        margin: 20px 12px;
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+
+    .games .game {
+        padding: 18px;
+    }
+
+    .games .game h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* ===== RAINBOW GREEN BACKGROUND ===== */
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: #ecfdf5;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #001a0b,
+        #064e3b,
+        #00a650,
+        #39ff14,
+        #6ee7b7,
+        #10b981,
+        #14532d,
+        #001a0b
+    );
+
+    background-size: 400% 400%;
+    animation: greenRainbow 12s ease infinite;
+}
+
+/* ===== MOVING GRADIENT ===== */
+
+@keyframes greenRainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 100%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ===== GREEN GLOW FOR YOUR SECTIONS ===== */
+
+.title {
+    text-shadow: 0 0 20px #39ff1466;
+}
+
+.about,
+.contact,
+.games {
+    background: linear-gradient(
+        135deg,
+        #021c10eF,
+        #064e3beF,
+        #0b3018eF
+    );
+
+    border: 1px solid #4ade8066;
+    border-radius: 22px;
+
+    box-shadow: 0 0 25px #22c55e25;
+    backdrop-filter: blur(12px);
+}
+
+/* ===== NEON GREEN LINKS ===== */
+
+a {
+    color: #86efac;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #39ff14;
+    text-shadow: 0 0 12px #39ff14;
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        background-position: center;
+    }
+}
+
+.name-input {
+    background: linear-gradient(
+        135deg,
+        #021c10eF,
+        #064e3beF,
+        #0b3018eF
+    );
+
+    border: 1px solid #4ade8066;
+    border-radius: 22px;
+
+    box-shadow: 0 0 25px #22c55e25;
+    backdrop-filter: blur(12px);
+}
+
+/* ===== NEON GREEN LINKS ===== */
+
+a {
+    color: #86efac;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #39ff14;
+    text-shadow: 0 0 12px #39ff14;
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        background-position: center;
+    }
+}
+
+
+/* ===== BIG NEON GREEN JOIN BUTTON ===== */
+
+.join-button {
+    display: inline-block;
+    padding: 20px 45px;
+    min-width: 220px;
+
+    font-size: 22px;
+    font-weight: 800;
+    font-family: "Segoe UI", Arial, sans-serif;
+    letter-spacing: 1px;
+
+    color: #02150a;
+    background: linear-gradient(
+        135deg,
+        #a3ffb5,
+        #39ff14,
+        #10b981,
+        #00a650
+    );
+
+    background-size: 200% 200%;
+    border: 2px solid #86efac;
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px #39ff1470,
+        0 0 35px #10b98140;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-position 0.4s ease;
+}
+
+/* Hover effect */
+
+.join-button:hover {
+    transform: translateY(-5px) scale(1.04);
+    background-position: 100% 50%;
+
+    box-shadow:
+        0 0 22px #39ff14aa,
+        0 0 50px #10b98180;
+}
+
+/* Click effect */
+
+.join-button:active {
+    transform: scale(0.96);
+}
+
+/* Keyboard accessibility */
+
+.join-button:focus-visible {
+    outline: 3px solid #d1fae5;
+    outline-offset: 5px;
+}
+
+/* Joined message */
+
+.join-message {
+    margin-top: 18px;
+    color: #86efac;
+    font-size: 22px;
+    font-weight: 800;
+    text-shadow: 0 0 15px #22c55e80;
+}
+
+/* Mobile size */
+
+@media (max-width: 600px) {
+    .join-button {
+        width: 100%;
+        min-width: 0;
+        padding: 18px 25px;
+        font-size: 20px;
+    }
+}
+
+
+/* ===== NEON GREEN INPUT STYLE ===== */
+
+input,
+textarea,
+.name-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 18px 22px;
+    margin: 15px 0;
+
+    color: #ecfdf5;
+    background: linear-gradient(
+        135deg,
+        #031a10,
+        #0a3020,
+        #052418
+    );
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+
+    border: 2px solid #166534;
+    border-radius: 16px;
+    outline: none;
+
+    box-shadow:
+        0 4px 15px #00000030,
+        inset 0 0 12px #22c55e08;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Placeholder text */
+
+input::placeholder,
+textarea::placeholder {
+    color: #86b99a;
+    opacity: 1;
+}
+
+/* Glowing effect when typing */
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #39ff14;
+
+    box-shadow:
+        0 0 10px #39ff1460,
+        0 0 25px #10b98130,
+        inset 0 0 12px #22c55e10;
+
+    transform: translateY(-2px);
+}
+
+/* Hover effect */
+
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: #22c55e;
+}
+
+/* Textarea settings */
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Dropdown options */
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    color: #ecfdf5;
+    background: #052e16;
+}
+
+/* Input validation */
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #f87171;
+    box-shadow: 0 0 10px #f8717130;
+}
+
+/* Keyboard accessibility */
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid #86efac;
+    outline-offset: 3px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+    input,
+    textarea,
+    select {
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 13px;
+    }
+}
+
+
+/* ===== NEON GREEN INPUT STYLE ===== */
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 18px 22px;
+    margin: 15px 0;
+
+    color: #ecfdf5;
+    background: linear-gradient(
+        135deg,
+        #031a10,
+        #0a3020,
+        #052418
+    );
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+
+    border: 2px solid #166534;
+    border-radius: 16px;
+    outline: none;
+
+    box-shadow:
+        0 4px 15px #00000030,
+        inset 0 0 12px #22c55e08;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Placeholder text */
+
+input::placeholder,
+textarea::placeholder {
+    color: #86b99a;
+    opacity: 1;
+}
+
+/* Glowing effect when typing */
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #39ff14;
+
+    box-shadow:
+        0 0 10px #39ff1460,
+        0 0 25px #10b98130,
+        inset 0 0 12px #22c55e10;
+
+    transform: translateY(-2px);
+}
+
+/* Hover effect */
+
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: #22c55e;
+}
+
+/* Textarea settings */
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Dropdown options */
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    color: #ecfdf5;
+    background: #052e16;
+}
+
+/* Input validation */
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #f87171;
+    box-shadow: 0 0 10px #f8717130;
+}
+
+/* Keyboard accessibility */
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid #86efac;
+    outline-offset: 3px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+    input,
+    textarea,
+    select {
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 13px;
+    }
+}
+
+
+/* ===== ACCOUNT PAGES ===== */
+
+.account-system {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+    color: var(--text, #ecfdf5);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.account-system [hidden] {
+    display: none !important;
+}
+
+.account-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+#menu-toggle,
+#show-login,
+#show-register,
+[data-action="close-panels"],
+.site-menu button,
+.account-system button:not(.join-button) {
+    cursor: pointer;
+    padding: 12px 18px;
+    color: var(--text, #ecfdf5);
+    background: var(--panel, #041a10ee);
+    border: 1px solid var(--border, #4ade8070);
+    border-radius: 12px;
+    transition: 0.25s ease;
+}
+
+.account-system button:hover {
+    border-color: var(--accent, #39ff14);
+    box-shadow: 0 0 16px var(--border, #4ade8070);
+}
+
+.site-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 18px;
+    background: var(--panel, #041a10ee);
+    border: 1px solid var(--border, #4ade8070);
+    border-radius: 18px;
+}
+
+.account-panel {
+    padding: 28px;
+    margin: 20px 0;
+    background: var(--panel, #041a10ee);
+    border: 1px solid var(--border, #4ade8070);
+    border-radius: 22px;
+    box-shadow: 0 12px 35px #00000030;
+    backdrop-filter: blur(12px);
+}
+
+.account-panel h2 {
+    color: var(--accent, #39ff14);
+}
+
+.account-panel label {
+    display: block;
+    margin: 14px 0 6px;
+}
+
+.account-system input,
+.account-system textarea,
+.account-system select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0 16px;
+    color: var(--text, #ecfdf5);
+    background: var(--field, #031a10);
+    border: 1px solid var(--border, #4ade8070);
+    border-radius: 12px;
+    font: inherit;
+}
+
+.account-system input:focus,
+.account-system textarea:focus,
+.account-system select:focus {
+    outline: 2px solid var(--accent, #39ff14);
+    outline-offset: 2px;
+}
+
+.account-system input:disabled {
+    opacity: 0.7;
+}
+
+.account-system .join-button {
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    color: #06150b;
+    background: linear-gradient(
+        135deg,
+        var(--accent, #39ff14),
+        var(--bg3, #10b981)
+    );
+    border: 0;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.profile-preview {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#profile-avatar-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid var(--accent, #39ff14);
+    border-radius: 50%;
+}
+
+#profile-preview-name {
+    color: var(--accent, #39ff14);
+}
+
+#account-message,
+#theme-status {
+    color: var(--accent, #39ff14);
+    overflow-wrap: anywhere;
+}
+
+.account-panel hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid var(--border, #4ade8070);
+}
+
+@media (max-width: 600px) {
+    .account-system {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    .account-panel {
+        padding: 20px 16px;
+    }
+
+    .site-menu {
+        flex-direction: column;
+    }
+}
